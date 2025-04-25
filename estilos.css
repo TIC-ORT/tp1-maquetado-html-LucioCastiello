@@ -1,112 +1,73 @@
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
-  /* General */
   body {
     font-family: sans-serif;
-    background-color: white;
   }
   
-  /* Header */
   header {
-    background-color: #FFD57E;
-    padding: 20px;
+    background-color: #fdd275;
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+    padding: 20px;
     gap: 20px;
+    align-items: center;
   }
   
   .logo {
     width: 80px;
     height: 80px;
-    background-color: #FFC266;
-  }
-  
-  .texto .titulo {
-    width: 150px;
-    height: 15px;
-    background-color: #FFB347;
-    margin-bottom: 10px;
+    background-color: #ffc762;
   }
   
   .texto .linea {
-    width: 200px;
-    height: 10px;
     background-color: white;
-    margin-bottom: 6px;
+    height: 8px;
+    margin-bottom: 8px;
+    border-radius: 4px;
   }
   
-  .texto .linea.corta {
-    width: 100px;
-  }
+  .texto .grande { width: 140px; background-color: #ffc762; }
+  .texto .mediana { width: 180px; }
+  .texto .chica { width: 120px; }
   
-  /* Sección de tarjetas */
-  .tarjetas {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 20px;
+  main {
     padding: 40px 20px;
   }
   
-  .card {
-    aspect-ratio: 1 / 1;
-    background-color: #eee;
+  .grid-cajas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Fuerza 3 columnas */
+    gap: 30px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .caja {
+    width: 100%;
+    aspect-ratio: 1/1;
     border-radius: 8px;
   }
   
-  /* Colores */
-  .celeste {
-    background-color: #C0EFFF;
-    border-top: 10px solid #A7E5EF;
-  }
+  .celeste { background-color: #b8efff; }
+  .naranja { background-color: #ffa282; }
+  .amarillo { background-color: #ffd35b; }
   
-  .naranja {
-    background-color: #FF9C7A;
-    border-top: 10px solid #FF7C5A;
-  }
-  
-  .amarillo {
-    background-color: #FFD25A;
-    border-top: 10px solid #FFC039;
-  }
-  
-  /* Footer */
   footer {
-    background-color: #eee;
+    background-color: #efefef;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
-    padding: 30px 0;
-    margin-top: 40px;
+    gap: 20px;
+    padding: 40px 0;
+    flex-wrap: wrap;
   }
   
-  .columna {
+  .footer-box {
     width: 80px;
     height: 50px;
     background-color: #ccc;
     border-radius: 6px;
-  }
-  
-  /* Responsive ajustes */
-  @media (max-width: 600px) {
-    header {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .texto .linea,
-    .texto .titulo {
-      width: 100%;
-    }
-  
-    .texto .linea.corta {
-      width: 50%;
-    }
   }
   
