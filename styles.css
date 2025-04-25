@@ -1,0 +1,157 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+/* Barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4dcdc9;
+    padding: 15px 30px;
+    height: 60px;
+}
+
+.logo {
+    background-color: #ff7f6a;
+    color: white;
+    padding: 8px 15px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.menu-line {
+    width: 150px;
+    height: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+/* Sección Hero */
+.hero {
+    background-color: #ffd485;
+    padding: 40px 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-content {
+    display: flex;
+    max-width: 1000px;
+    gap: 30px;
+    align-items: flex-start;
+    margin: 0 auto;
+}
+
+.hero-image {
+    width: 150px;
+    height: 150px;
+    background-color: #ffb347;
+    flex-shrink: 0;
+}
+
+.hero-text {
+    color: #333;
+}
+
+.hero-text h1 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.hero-text p {
+    margin-bottom: 10px;
+    background-color: #ffe9b1;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.hero-text button {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 8px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+/* Sección de Tarjetas */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 50px 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    height: 150px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-card {
+    width: 70%;
+    height: 60%;
+    border-radius: 0;
+}
+
+.card-blue {
+    background-color: #a8e6e2;
+}
+
+.blue-inner {
+    background-color: #4dcdc9;
+}
+
+.card-coral {
+    background-color: #ffb3a7;
+}
+
+.coral-inner {
+    background-color: #ff7f6a;
+}
+
+.card-yellow {
+    background-color: #ffe0a8;
+}
+
+.yellow-inner {
+    background-color: #ffd485;
+}
+
+/* Pie de Página */
+footer {
+    background-color: #e0e0e0;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-column {
+    width: 30%;
+}
+
+.footer-column h3 {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.footer-line {
+    height: 12px;
+    background-color: #c0c0c0;
+    margin-bottom: 10px;
+    width: 90%;
+    border-radius: 3px;
+}
